@@ -10,7 +10,7 @@ const userRegisterationValidator = () => {
         .isLength({max:13}).withMessage("username must be 13 char"),
 
 
-        body('email')
+        body('email') 
         .trim()
         .notEmpty().withMessage('Email is required')
         .isEmail().withMessage("Email is invalid"),
